@@ -19,7 +19,7 @@ parentPort.on('message', async (data) => {
 
     for (let subscriber of subscribers) {
       let mailOptions = {
-        from: '"CodeItUp" <https://codeitupblogs.netlify.app/>',
+        from: '"JainTrades" <https://jaintrades.netlify.app/>',
         to: subscriber.email,
         subject: 'New Blog Post Published!',
         text: `A new blog post has been published.\n\nTitle: ${title}\nSubtitle: ${subtitle}\nRead more at: ${url}`,
